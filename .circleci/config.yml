@@ -2,11 +2,11 @@ version: 2
 jobs:
   build:
     machine: true
-    docker:
-      - image: circleci/hello-ci-workflow:1.0
+    #docker:
+    #  - image: circleci/hello-ci-workflow:1.0
     steps:
       - checkout
-      - run: echo "hello world"
+      #- run: echo "hello world"
       - run: docker build -t circleci/hello-ci-workflow:1.0 .
 
 workflows:
